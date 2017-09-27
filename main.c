@@ -38,23 +38,26 @@ int main(){
     QRS_params qsr_params; // Instance of the made available through: #include "qsr.h"
     openfile("ECG.txt");   // Pointer to a file object;
     FILE *writeHighPass = fopen("highPassFilter.txt","w");
+    FILE *writeDer = fopen("derivativeFilter.txt","w");
+    FILE *writeSqr = fopen("squareFilter.txt","w");
 
     for (int position = 0 ; position < 10000 ; position++) {
         x[position%arraySize] = getNextData();
+
         x_low[position%arraySize] = lowPassFilter(x, yl, position%arraySize);
         x_high[position%arraySize] = highPassFilter(x_low, yh, position%arraySize);
         x_der[position%arraySize] = derivative(x_high, position%arraySize);
-        
-
-
+        x_sqr[position%arraySize] = square(x_der,position%arraySize);
 
 
         fprintf(writeHighPass,"%d \n", x_high[position%arraySize]);
+        fprintf(writeDer,"%d \n", x_der[position%arraySize]);
+        fprintf(writeSqr,"%d \n",x_sqr[position%arraySize]);
         peakDetection(&qsr_params); // Perform Peak Detection
     }
 
     for (int i = 0; i < arraySize; ++i) {
-        printf("%d,",x_high[i]);
+        printf("%d,",x_sqr[i]);
     }
     fclose(writeHighPass);
     return 0;

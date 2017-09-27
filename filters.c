@@ -38,42 +38,15 @@ int highPassFilter(int *x_low, int *yh, int position){
     return x_high;
 }
 
-int derivative(int x_high, int *x){
-    const int N_x = 5; //Length of x array
-
-    int kx = d % 5; //Loop index number in array x
-
-    x[(N_x+(0-kx))%N_x] = x_high; //append high_x value to x[4]
+int derivative(int *x_high, int position){
 
     //Derivative equation
-    int x_der = (2*x[(N_x+(0-kx))%N_x]+x[(N_x+(1-kx))%N_x]-x[(N_x+(3-kx))%N_x]-2*x[(N_x+(4-kx))%N_x])/8;
-//    printf("x_der: %4i \t\t\t\t\t x[%i]: %4i \t x[%i]: %4i \t x[%i]: %4i \t x[%i]: %4i\n",
-//           x_der,
-//           (N_x+(0-kx))%N_x, x[(N_x+(0-kx))%N_x],
-//           (N_x+(1-kx))%N_x, x[(N_x+(1-kx))%N_x],
-//           (N_x+(3-kx))%N_x, x[(N_x+(3-kx))%N_x],
-//           (N_x+(4-kx))%N_x, x[(N_x+(4-kx))%N_x]);
-
-    d += 1; //Increment i by 1
-
-    return x_der;
+    return (2*x_high[position]+x_high[((position-1)+arraySize)%arraySize]-x_high[((position-2)+arraySize)%arraySize]-2*x_high[((position-4)+arraySize)%arraySize])/8;
 }
 
-int square(int x_der, int *x){
-
-    const int N_x = 10; //Length of x array
-
-    int kx = s % 10; //Loop index number in array x
-
-    x[(N_x+(0-kx))%N_x] = x_der; //append high_x value to x[4]
-
-    //Derivative equation
-    int x_sqr = pow(x[(N_x+(0-kx))%N_x],2);
-//    printf("x_sqr: %4i \t\t\t\t\t x[%i]: %4i\n", x_sqr, (N_x+(0-kx))%N_x, x[(N_x+(0-kx))%N_x]);
-
-    s += 1; //Increment i by 1
-
-    return x_sqr;
+int square(int *x_der, int position){
+    //Square equation
+    return pow(x_der[position],2);
 }
 
 int moveWin(int *x_sqr, int *x){
