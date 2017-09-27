@@ -61,3 +61,4 @@ cn
 cmake-build-debug/*
 .idea/*
 .idea/workspace.xml
+.idea/
