@@ -13,7 +13,7 @@
 
 int main()
 {
-    int Mytte;
+    int My;
 
     QRS_params qsr_params;                   // Instance of the made available through: #include "qsr.h"
     openfile("ECG.txt");                     // Pointer to a file object;
@@ -25,12 +25,7 @@ int main()
 
     memset(x, 0, N * sizeof (int)); //Set the values in array x to zero
     memset(y, 0, 3 * sizeof (int)); //Set the values in array y to zero
-
-    //for(int i = 0; i < 10; i++){
-    //    printf("moveWin(%d, %d, %d): %d\n",getNextData(), x, y, moveWin(getNextData(), x, y));
-    //}
-
-
+    
 
     int x_low[N];
 
