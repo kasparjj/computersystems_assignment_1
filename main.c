@@ -19,7 +19,7 @@ int main(){
     memset(x, 0, arraySize * sizeof(int)); //Set the values in array x to zero
     memset(y, 0, arraySize * sizeof(int)); //Set the values in array y to zero
 
-
+arraySize= 2;
     int x_low[arraySize];
     int x_high[arraySize];
     int x_der[arraySize];
