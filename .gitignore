@@ -58,7 +58,8 @@ dkms.conf
 *.xml
 cmake-build-debug/cn
 cn
-*.cmake-build-debug/cn
+cmake-build-debug/*
+.idea/*
 /cmake-build-debug/cn
 .idea/workspace.xml
 cmake-build-debug/CMakeFiles/cn.dir/C.includecache
