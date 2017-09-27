@@ -6,12 +6,8 @@ FILE *file;
 
 int getNextData() {
     int data;
-    if (file){
-        fscanf(file,"%d",&data);
-    }else {
-        printf("File not found, aborting with 0.");
-        return 0;
-    }
+    fscanf(file,"%d",&data);
+
     return data; // return sensor value
 }
 
