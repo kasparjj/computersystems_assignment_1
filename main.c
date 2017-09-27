@@ -43,7 +43,8 @@ int main(){
         x[position%arraySize] = getNextData();
         x_low[position%arraySize] = lowPassFilter(x, yl, position%arraySize);
         x_high[position%arraySize] = highPassFilter(x_low, yh, position%arraySize);
-        x_der[position%arraySize] =
+        x_der[position%arraySize] = derivative(x_high, position%arraySize);
+        
 
 
 
