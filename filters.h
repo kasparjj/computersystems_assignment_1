@@ -3,7 +3,7 @@
 
 
 // Feel free to change return statement and arguments
-int lowPassFilter(int input_data,int *x,int *y);
+int lowPassFilter(int *x,int *y, int position);
 int highPassFilter(int x_low, int *x, int*y);
 int derivative(int x_high, int *x);
 int square(int x_der, int *x);

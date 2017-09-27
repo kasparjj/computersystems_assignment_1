@@ -8,32 +8,19 @@
     int d = 0; //Incrementation of array index
     int s = 0; //Incrementation of array index
     int w = 0; //Incrementation of array index
+    int arraySize = 80;
+    int N_y = 3;
+    int N_x = 13;
+    int ypos = 0;
 
-
-int lowPassFilter(int input_data, int *x, int *y) {
-    const int N_x = 13; //Length of x array
-    const int N_y = 3; //Length of y array
-
-    int kx = l % 13; //Loop index number in array x
-    int ky = l % 3; //Loop index number in array y
-
-    x[(N_x+(0-kx))%N_x] = input_data; //append input value to x[12]
+int lowPassFilter(int *x, int *y,int position) {
 
     //Low Pass equation
-    int x_low = 2*y[(N_y+(1-ky))%N_y]-y[(N_y+(2-ky))%N_y]+(x[(N_x+(0-kx))%N_x]-2*x[(N_x+(6-kx))%N_x]+x[(N_x+(12-kx))%N_x])/32;
-//    printf("x_low: %4i \t y[%i]: %4i \t y[%i]: %4i \t x[%i]: %4i \t x[%i]: %4i \t x[%i]: %4i \t input_data: %3i\n",
-//            x_low,
-//           (N_y+(1-ky))%N_y, y[(N_y+(1-ky))%N_y],
-//           (N_y+(2-ky))%N_y, y[(N_y+(2-ky))%N_y],
-//           (N_x+(0-kx))%N_x, x[(N_x+(0-kx))%N_x],
-//           (N_x+(6-kx))%N_x, x[(N_x+(6-kx))%N_x],
-//           (N_x+(12-kx))%N_x, x[(N_x+(12-kx))%N_x],
-//            input_data);
+    int x_low = 2*y[((ypos-1)+3)%3]+y[(N_y+(2-ypos))%N_y]+(x[position]-2*x[((position-6)+arraySize)%arraySize]+x[((position-12)+arraySize)%arraySize])/32;
 
-    y[(N_y+(0-ky))%N_y] = x_low; //append x_low value to y[2]
+    y[ypos%3] = x_low; //append x_low value to y[2]
 
-    l++; //Increment i by 1
-
+    ypos++; //Increment i by 1
     return x_low;
 }
 

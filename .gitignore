@@ -56,3 +56,5 @@ Mkfile.old
 dkms.conf
 *.xml
 .idea/workspace.xml
+cmake-build-debug/CMakeFiles/Progress/2
+cmake-build-debug/CMakeFiles/Progress/1
