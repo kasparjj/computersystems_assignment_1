@@ -33,8 +33,8 @@ int main(){
             x_low[i] = lowPassFilter(getNextData(), x, y);
         }
 
-        memset(x, 0, N * sizeof(int)); //Set the values in array x to zero
-        memset(y, 0, N * sizeof(int)); //Set the values in array y to zero
+//        memset(x, 0, N * sizeof(int)); //Set the values in array x to zero
+//        memset(y, 0, N * sizeof(int)); //Set the values in array y to zero
 
         //Setup array
         int x_high[30];
