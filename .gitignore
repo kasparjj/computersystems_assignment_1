@@ -75,4 +75,3 @@ compile_commands.json
 CTestTestfile.cmake
 .idea/workspace.xml
 cmake-build-debug/cn
-cmake-build-debug/
