@@ -4,7 +4,6 @@
 # Self
 *.txt
 *.xml
-*.idea
 
 # Object files
 *.o

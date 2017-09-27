@@ -11,8 +11,20 @@
 // Please change order, names arguments to fit your solution.
 
 
+<<<<<<< HEAD
 int main()
 {
+=======
+int main(){
+    int N = 100; //Size of array's
+    int abc = 1;
+
+    int *x = (int *) malloc(N * sizeof(int)); //Allocate size of array x
+    int *y = (int *) malloc(N * sizeof(int)); //Allocate size of array x
+
+    memset(x, 0, N * sizeof(int)); //Set the values in array x to zero
+    memset(y, 0, N * sizeof(int)); //Set the values in array y to zero
+>>>>>>> parent of f50f0da... gitignore .idea files
     QRS_params qsr_params;                   // Instance of the made available through: #include "qsr.h"
     openfile("ECG.txt");                     // Pointer to a file object;
 
