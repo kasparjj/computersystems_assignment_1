@@ -60,11 +60,5 @@ cmake-build-debug/cn
 cn
 cmake-build-debug/*
 .idea/*
-/cmake-build-debug/cn
 .idea/workspace.xml
-cmake-build-debug/CMakeFiles/cn.dir/C.includecache
-cmake-build-debug/CMakeFiles/Progress/2
-cmake-build-debug/CMakeFiles/Progress/count.txt
-*.includecache
-cmake-build-debug/computersystems_assignment_1
-.idea/workspace.xml
+
