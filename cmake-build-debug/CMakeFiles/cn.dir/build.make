@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Kaspar/CLionProjects/cn
+CMAKE_SOURCE_DIR = /Users/Kaspar/CLionProjects/computersystems_assignment_1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Kaspar/CLionProjects/cn/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/Kaspar/CLionProjects/computersystems_assignment_1/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cn.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/cn.dir/flags.make
 
 CMakeFiles/cn.dir/filters.c.o: CMakeFiles/cn.dir/flags.make
 CMakeFiles/cn.dir/filters.c.o: ../filters.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Kaspar/CLionProjects/cn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cn.dir/filters.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cn.dir/filters.c.o   -c /Users/Kaspar/CLionProjects/cn/filters.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Kaspar/CLionProjects/computersystems_assignment_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cn.dir/filters.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cn.dir/filters.c.o   -c /Users/Kaspar/CLionProjects/computersystems_assignment_1/filters.c
 
 CMakeFiles/cn.dir/filters.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cn.dir/filters.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Kaspar/CLionProjects/cn/filters.c > CMakeFiles/cn.dir/filters.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Kaspar/CLionProjects/computersystems_assignment_1/filters.c > CMakeFiles/cn.dir/filters.c.i
 
 CMakeFiles/cn.dir/filters.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cn.dir/filters.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Kaspar/CLionProjects/cn/filters.c -o CMakeFiles/cn.dir/filters.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Kaspar/CLionProjects/computersystems_assignment_1/filters.c -o CMakeFiles/cn.dir/filters.c.s
 
 CMakeFiles/cn.dir/filters.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/cn.dir/filters.c.o.provides.build: CMakeFiles/cn.dir/filters.c.o
 
 CMakeFiles/cn.dir/main.c.o: CMakeFiles/cn.dir/flags.make
 CMakeFiles/cn.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Kaspar/CLionProjects/cn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cn.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cn.dir/main.c.o   -c /Users/Kaspar/CLionProjects/cn/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Kaspar/CLionProjects/computersystems_assignment_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cn.dir/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cn.dir/main.c.o   -c /Users/Kaspar/CLionProjects/computersystems_assignment_1/main.c
 
 CMakeFiles/cn.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cn.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Kaspar/CLionProjects/cn/main.c > CMakeFiles/cn.dir/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Kaspar/CLionProjects/computersystems_assignment_1/main.c > CMakeFiles/cn.dir/main.c.i
 
 CMakeFiles/cn.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cn.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Kaspar/CLionProjects/cn/main.c -o CMakeFiles/cn.dir/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Kaspar/CLionProjects/computersystems_assignment_1/main.c -o CMakeFiles/cn.dir/main.c.s
 
 CMakeFiles/cn.dir/main.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/cn.dir/main.c.o.provides.build: CMakeFiles/cn.dir/main.c.o
 
 CMakeFiles/cn.dir/qsr.c.o: CMakeFiles/cn.dir/flags.make
 CMakeFiles/cn.dir/qsr.c.o: ../qsr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Kaspar/CLionProjects/cn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cn.dir/qsr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cn.dir/qsr.c.o   -c /Users/Kaspar/CLionProjects/cn/qsr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Kaspar/CLionProjects/computersystems_assignment_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cn.dir/qsr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cn.dir/qsr.c.o   -c /Users/Kaspar/CLionProjects/computersystems_assignment_1/qsr.c
 
 CMakeFiles/cn.dir/qsr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cn.dir/qsr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Kaspar/CLionProjects/cn/qsr.c > CMakeFiles/cn.dir/qsr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Kaspar/CLionProjects/computersystems_assignment_1/qsr.c > CMakeFiles/cn.dir/qsr.c.i
 
 CMakeFiles/cn.dir/qsr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cn.dir/qsr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Kaspar/CLionProjects/cn/qsr.c -o CMakeFiles/cn.dir/qsr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Kaspar/CLionProjects/computersystems_assignment_1/qsr.c -o CMakeFiles/cn.dir/qsr.c.s
 
 CMakeFiles/cn.dir/qsr.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/cn.dir/qsr.c.o.provides.build: CMakeFiles/cn.dir/qsr.c.o
 
 CMakeFiles/cn.dir/sensor.c.o: CMakeFiles/cn.dir/flags.make
 CMakeFiles/cn.dir/sensor.c.o: ../sensor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Kaspar/CLionProjects/cn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cn.dir/sensor.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cn.dir/sensor.c.o   -c /Users/Kaspar/CLionProjects/cn/sensor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Kaspar/CLionProjects/computersystems_assignment_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cn.dir/sensor.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cn.dir/sensor.c.o   -c /Users/Kaspar/CLionProjects/computersystems_assignment_1/sensor.c
 
 CMakeFiles/cn.dir/sensor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cn.dir/sensor.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Kaspar/CLionProjects/cn/sensor.c > CMakeFiles/cn.dir/sensor.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Kaspar/CLionProjects/computersystems_assignment_1/sensor.c > CMakeFiles/cn.dir/sensor.c.i
 
 CMakeFiles/cn.dir/sensor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cn.dir/sensor.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Kaspar/CLionProjects/cn/sensor.c -o CMakeFiles/cn.dir/sensor.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Kaspar/CLionProjects/computersystems_assignment_1/sensor.c -o CMakeFiles/cn.dir/sensor.c.s
 
 CMakeFiles/cn.dir/sensor.c.o.requires:
 
@@ -169,7 +169,7 @@ cn: CMakeFiles/cn.dir/qsr.c.o
 cn: CMakeFiles/cn.dir/sensor.c.o
 cn: CMakeFiles/cn.dir/build.make
 cn: CMakeFiles/cn.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Kaspar/CLionProjects/cn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable cn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Kaspar/CLionProjects/computersystems_assignment_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable cn"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cn.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -189,6 +189,6 @@ CMakeFiles/cn.dir/clean:
 .PHONY : CMakeFiles/cn.dir/clean
 
 CMakeFiles/cn.dir/depend:
-	cd /Users/Kaspar/CLionProjects/cn/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Kaspar/CLionProjects/cn /Users/Kaspar/CLionProjects/cn /Users/Kaspar/CLionProjects/cn/cmake-build-debug /Users/Kaspar/CLionProjects/cn/cmake-build-debug /Users/Kaspar/CLionProjects/cn/cmake-build-debug/CMakeFiles/cn.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/Kaspar/CLionProjects/computersystems_assignment_1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Kaspar/CLionProjects/computersystems_assignment_1 /Users/Kaspar/CLionProjects/computersystems_assignment_1 /Users/Kaspar/CLionProjects/computersystems_assignment_1/cmake-build-debug /Users/Kaspar/CLionProjects/computersystems_assignment_1/cmake-build-debug /Users/Kaspar/CLionProjects/computersystems_assignment_1/cmake-build-debug/CMakeFiles/cn.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cn.dir/depend
 

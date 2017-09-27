@@ -1,3 +1,3 @@
-/Users/Kaspar/CLionProjects/cn/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/Kaspar/CLionProjects/cn/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/Kaspar/CLionProjects/cn/cmake-build-debug/CMakeFiles/cn.dir
+/Users/Kaspar/CLionProjects/computersystems_assignment_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/Kaspar/CLionProjects/computersystems_assignment_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/Kaspar/CLionProjects/computersystems_assignment_1/cmake-build-debug/CMakeFiles/cn.dir
