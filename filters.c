@@ -32,7 +32,7 @@ int lowPassFilter(int input_data, int *x, int *y) {
 
     y[(N_y+(0-ky))%N_y] = x_low; //append x_low value to y[2]
 
-    l += 1; //Increment i by 1
+    l++; //Increment i by 1
 
     return x_low;
 }
@@ -105,20 +105,11 @@ int moveWin(int *x_sqr, int *x){
     int sum = 0;
     int N_x = 30; //Length of x array
 
-    int kx; //Loop index number in array x
+    int kx = 0; //Loop index number in array x
 
     for(int i = 1; i <= N_x; i++){
-        kx = w % N_x;
-
         sum += x_sqr[((N_x+(0-kx))%N_x)]; //append sqr_x value to x[4]
-//        printf("x_sqr[%d]: %d \t sum: %d \t sum/N_x: %d index: %d\n", ((N_x+(0-kx))%N_x), x_sqr[((N_x+(0-kx))%N_x)], sum, sum/N_x, i);
-        printf("%d",sum/N_x);
-        for (int i = 0 ; i < (sum/N_x)/100 ; i++){
-            printf(" ");
-        }
-        printf("*\n");
-        w -= 1; //Increment i by 1
-
+        kx++;
     }
 
     int mwi = sum/N_x;
