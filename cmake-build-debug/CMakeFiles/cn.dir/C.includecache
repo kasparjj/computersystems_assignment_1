@@ -15,6 +15,8 @@ stdlib.h
 -
 math.h
 -
+string.h
+-
 
 /Users/Kaspar/CLionProjects/computersystems_assignment_1/filters.h
 
