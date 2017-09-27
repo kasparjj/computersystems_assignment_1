@@ -13,7 +13,7 @@
 
 
 int main(){
-    int N = 100; //Size of array's
+    int N = 3; //Size of array's
     int abc = 1;
 
     int *x = (int *) malloc(N * sizeof(int)); //Allocate size of array x
