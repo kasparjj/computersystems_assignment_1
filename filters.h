@@ -3,11 +3,11 @@
 
 
 // Feel free to change return statement and arguments
-int lowPassFilter(int input_data,int *x,int *y);
-int highPassFilter(int x_low, int *x, int*y);
-int derivative(int x_high, int *x);
-int square(int x_der, int *x);
-int moveWin(int *x_sqr, int*x);
+int* lowPassFilter(int *x);
+int* highPassFilter(int *x);
+int* derivative(int *x);
+int* square(int *x);
+int moveWin(int *x, int position);
 // Implement additional filters
  
 #endif // FILTERS_H
