@@ -1,6 +1,23 @@
 # Prerequisites
 *.d
 
+#Some of these are related to eclipse. So i keep them out of my repo
+.cproject
+.dep/
+.project
+.settings/
+
+#files being edited
+*~
+
+# make and build files
+*.lst
+*.o
+*.eep
+*.lss
+*.map
+*.sym
+
 # Self
 *.txt
 *.xml
@@ -56,3 +73,4 @@ Module.symvers
 Mkfile.old
 dkms.conf
 *.xml
+.idea/workspace.xml

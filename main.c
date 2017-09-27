@@ -14,7 +14,6 @@
 int main(){
     int N = 100; //Size of array's
 
-
     int *x = (int *) malloc(N * sizeof(int)); //Allocate size of array x
     int *y = (int *) malloc(N * sizeof(int)); //Allocate size of array x
 
