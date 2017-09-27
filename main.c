@@ -13,7 +13,6 @@
 
 int main()
 {
-    int MOJO;
 
     QRS_params qsr_params;                   // Instance of the made available through: #include "qsr.h"
     openfile("ECG.txt");                     // Pointer to a file object;
