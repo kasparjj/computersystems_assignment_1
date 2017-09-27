@@ -12,41 +12,29 @@
     int N_y = 3;
     int N_x = 13;
     int ypos = 0;
+    int yhpos = 0;
+
 
 int lowPassFilter(int *x, int *y,int position) {
 
     //Low Pass equation
-    int x_low = 2*y[((ypos-1)+3)%3]+y[(N_y+(2-ypos))%N_y]+(x[position]-2*x[((position-6)+arraySize)%arraySize]+x[((position-12)+arraySize)%arraySize])/32;
+    int x_low = 2*y[((ypos-1)+3)%3] - y[((ypos-2)+3)%3]+(x[position]-2*(x[((position-6)+arraySize)%arraySize])+x[((position-12)+arraySize)%arraySize])/32;
+
+    /*printf("xpos: %d \t x: %d\n -12reads/outputs: %d/%d \t -6reads/outputs: %d/%d \t x_low: %d\n",position,x[position],((position-12)+arraySize)%arraySize,x[((position-12)+arraySize)%arraySize],((position-6)+arraySize)%arraySize,x[((position-6)+arraySize)%arraySize],x_low);
+    printf("ypos: %d\t y1: %d \t y2: %d\n",ypos%3,y[((ypos-1)+3)%3],y[((ypos-2)+3)%3]);
+    */
 
     y[ypos%3] = x_low; //append x_low value to y[2]
-
-    ypos++; //Increment i by 1
+    ypos++; //Increment ypos by 1
     return x_low;
 }
 
-int highPassFilter(int x_low, int *x, int *y){
-    const int N_x = 33; //Length of x array
-    const int N_y = 2; //Length of y array
-
-    int kx = h % 33; //Loop index number in array x
-    int ky = h % 2; //Loop index number in array y
-
-    x[(N_x+(0-kx))%N_x] = x_low; //append x_low value to x[32]
+int highPassFilter(int *x_low, int *yh, int position){
 
     //High Pass equation
-    int x_high = y[(N_y+(1-ky))%N_y]-(x[(N_x+(0-kx))%N_x]/32)+x[(N_x+(16-kx))%N_x]-x[(N_x+(17-kx))%N_x]+(x[(N_x+(32-kx))%N_x]/32);
-//    printf("x_high: %4i \t y[%i]: %4i \t x[%i]: %4i \t x[%i]: %4i \t x[%i]: %4i \t x[%i]: %4i\n",
-//           x_high,
-//           (N_y+(1-ky))%N_y, y[(N_y+(1-ky))%N_y],
-//           (N_x+(0-kx))%N_x, x[(N_x+(0-kx))%N_x],
-//           (N_x+(16-kx))%N_x, x[(N_x+(16-kx))%N_x],
-//           (N_x+(17-kx))%N_x, x[(N_x+(17-kx))%N_x],
-//           (N_x+(32-kx))%N_x, x[(N_x+(32-kx))%N_x]);
-
-    y[(N_y+(0-ky))%N_y] = x_high;
-
-    h += 1; //Increment i by 1
-
+    int x_high = yh[((yhpos-1)+2)%2]-(x_low[position]/32)+x_low[((position-16)+arraySize)%arraySize]-x_low[((position-17)+arraySize)%arraySize]+((x_low[((position-32)+arraySize)%arraySize])/32);
+    yh[yhpos%2] = x_high;
+    yhpos++; //Increment yhpos by 1
     return x_high;
 }
 

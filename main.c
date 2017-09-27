@@ -15,46 +15,46 @@
 int main(){
     int arraySize = 80; //Size of array x
     int *x = (int *) malloc(arraySize * sizeof(int)); //Allocate size of array x
-    int *y = (int *) malloc(3 * sizeof(int)); //Allocate size of array x
-    memset(x, 0, arraySize * sizeof(int)); //Set the values in array x to zero
-    memset(y, 0, arraySize * sizeof(int)); //Set the values in array y to zero
+    int *x_low = (int *) malloc(arraySize * sizeof(int)); //Allocate size of array x
+    int *x_high = (int *) malloc(arraySize * sizeof(int)); //Allocate size of array x
+    int *x_der = (int *) malloc(arraySize * sizeof(int)); //Allocate size of array x
+    int *x_sqr = (int *) malloc(arraySize * sizeof(int)); //Allocate size of array x
 
-    int x_low[arraySize];
-    int x_high[arraySize];
-    int x_der[arraySize];
-    int x_sqr[arraySize];
-    int x_moveWin;
+
+    int *yl = (int *) malloc(3 * sizeof(int)); //Allocate size of array x
+    int *yh = (int *) malloc(2 * sizeof(int)); //Allocate size of array x
+
+    memset(x, 0, arraySize * sizeof(int)); //Set the values in array x to zero
+    memset(x_low, 0, arraySize * sizeof(int)); //Set the values in array x to zero
+    memset(x_high, 0, arraySize * sizeof(int)); //Set the values in array x to zero
+    memset(x_der, 0, arraySize * sizeof(int)); //Set the values in array x to zero
+    memset(x_sqr, 0, arraySize * sizeof(int)); //Set the values in array x to zero
+
+    memset(yl, 0, 3 * sizeof(int)); //Set the values in array y to zero
+    memset(yh, 0, 2 * sizeof(int)); //Set the values in array y to zero
+
+
 
     QRS_params qsr_params; // Instance of the made available through: #include "qsr.h"
     openfile("ECG.txt");   // Pointer to a file object;
-    for (int position = 0 ; position < 5 ; position++) {
+    FILE *writeHighPass = fopen("highPassFilter.txt","w");
+
+    for (int position = 0 ; position < 10000 ; position++) {
         x[position%arraySize] = getNextData();
+        x_low[position%arraySize] = lowPassFilter(x, yl, position%arraySize);
+        x_high[position%arraySize] = highPassFilter(x_low, yh, position%arraySize);
+        x_der[position%arraySize] =
 
-        for (int i = 0; i < arraySize-13; i++) {
-            x_low[i] = lowPassFilter(x, y, position%arraySize);
-        }
-        for (int i = 0 ; i < arraySize ; i++){
-            printf("%d ", x_low[i]);
-        }
-/*
 
-        //run highPassFilter i times
-        for (int i = 0; i < arraySize-(13); i++) {
-            x_high[i] = highPassFilter(x_low[i], x, y);
-        }
 
-        //run highPassFilter i times
-        for (int i = 0; i < arraySize-(13+33); i++) {
-            x_der[i] = derivative(x_high[i], x);
-        }
 
-        //run Square i times
-        for (int i = 0; i < arraySize-(13+33+5); i++) {
-            x_sqr[i] = square(x_der[i], x);
-        }
-*/
-
+        fprintf(writeHighPass,"%d \n", x_high[position%arraySize]);
         peakDetection(&qsr_params); // Perform Peak Detection
     }
+
+    for (int i = 0; i < arraySize; ++i) {
+        printf("%d,",x_high[i]);
+    }
+    fclose(writeHighPass);
     return 0;
 }
