@@ -1,6 +1,10 @@
 # Prerequisites
 *.d
 
+#self
+*.txt
+*.xml
+
 # Object files
 *.o
 *.ko
@@ -58,18 +62,11 @@ cmake-build-debug/cn
 .idea/workspace.xml
 cmake-build-debug/CMakeFiles/cn.dir/C.includecache
 cmake-build-debug/CMakeFiles/Progress/2
-cmake-build-debug/cn
 cmake-build-debug/CMakeFiles/Progress/count.txt
 *.includecache
 cmake-build-debug/cn
 cmake-build-debug/CMakeFiles/cn.dir/C.includecache
 .idea/workspace.xml
-*.includecache
 *.xml
 *.includecache
-cmake-build-debug/cn
-*.xml
-cmake-build-debug/cn
-cmake-build-debug/cn
-cmake-build-debug/cn
-*.xml
+.idea/workspace.xml
