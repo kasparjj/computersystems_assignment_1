@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <string.h>
 
     int l = 0; //Incrementation of array index
     int h = 0; //Incrementation of array index
@@ -9,8 +10,8 @@
     int s = 0; //Incrementation of array index
     int w = 0; //Incrementation of array index
 
-
 int lowPassFilter(int input_data, int *x, int *y) {
+
     const int N_x = 13; //Length of x array
     const int N_y = 3; //Length of y array
 
@@ -38,6 +39,7 @@ int lowPassFilter(int input_data, int *x, int *y) {
 }
 
 int highPassFilter(int x_low, int *x, int *y){
+
     const int N_x = 33; //Length of x array
     const int N_y = 2; //Length of y array
 
@@ -63,14 +65,14 @@ int highPassFilter(int x_low, int *x, int *y){
     return x_high;
 }
 
-int Derivative(int x_high, int *x){
+int derivative(int x_high, int *x){
     const int N_x = 5; //Length of x array
 
     int kx = d % 5; //Loop index number in array x
 
     x[(N_x+(0-kx))%N_x] = x_high; //append high_x value to x[4]
 
-    //Derivative equation
+    //derivative equation
     int x_der = (2*x[(N_x+(0-kx))%N_x]+x[(N_x+(1-kx))%N_x]-x[(N_x+(3-kx))%N_x]-2*x[(N_x+(4-kx))%N_x])/8;
     printf("x_der: %4i \t\t\t\t\t x[%i]: %4i \t x[%i]: %4i \t x[%i]: %4i \t x[%i]: %4i\n",
            x_der,
@@ -84,7 +86,7 @@ int Derivative(int x_high, int *x){
     return x_der;
 }
 
-int Square(int x_der, int *x){
+int square(int x_der, int *x){
 
     const int N_x = 10; //Length of x array
 
@@ -92,7 +94,7 @@ int Square(int x_der, int *x){
 
     x[(N_x+(0-kx))%N_x] = x_der; //append high_x value to x[4]
 
-    //Derivative equation
+    //square equation
     int x_sqr = pow(x[(N_x+(0-kx))%N_x],2);
     printf("x_sqr: %4i \t\t\t\t\t x[%i]: %4i\n", x_sqr, (N_x+(0-kx))%N_x, x[(N_x+(0-kx))%N_x]);
 
@@ -101,7 +103,7 @@ int Square(int x_der, int *x){
     return x_sqr;
 }
 
-int moveWin(int *x_sqr, int *x){
+int moveWin(int input_data, int *x_sqr, int *x){
     int sum = 0;
     int N_x = 30; //Length of x array
 

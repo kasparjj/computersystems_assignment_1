@@ -15,14 +15,20 @@ int main()
 {
     QRS_params qsr_params;                   // Instance of the made available through: #include "qsr.h"
     openfile("ECG.txt");                     // Pointer to a file object;
-    int abc = 0;
+
     int N = 100; //Size of array's
 
     int  *x = (int * ) malloc(N * sizeof(int)); //Allocate size of array x
-    int  *y = (int * ) malloc(N * sizeof(int)); //Allocate size of array x
+    int  *y = (int * ) malloc(3 * sizeof(int)); //Allocate size of array x
 
     memset(x, 0, N * sizeof (int)); //Set the values in array x to zero
-    memset(y, 0, N * sizeof (int)); //Set the values in array y to zero
+    memset(y, 0, 3 * sizeof (int)); //Set the values in array y to zero
+
+    for(int i = 0; i < 10; i++){
+        printf("moveWin(%d, %d, %d): %d\n",getNextData(), x, y, moveWin(getNextData(), x, y));
+    }
+
+
 
     int x_low[N];
 
@@ -50,7 +56,7 @@ int main()
 
     //run highPassFilter i times
     for(int i = 0; i < 30; i++){
-        x_der[i] = Derivative(x_high[i], x);
+        x_der[i] = derivative(x_high[i], x);
     }
 
     memset(x, 0, N * sizeof (int)); //Set the values in array x to zero
@@ -60,7 +66,7 @@ int main()
 
     //run Square i times
     for(int i = 0; i < 30; i++){
-        x_sqr[i] = Square(x_der[i], x);
+        x_sqr[i] = square(x_der[i], x);
     }
 
     memset(x, 0, N * sizeof (int)); //Set the values in array x to zero
