@@ -64,7 +64,7 @@ cmake-build-debug/CMakeFiles/cn.dir/C.includecache
 cmake-build-debug/CMakeFiles/Progress/2
 cmake-build-debug/CMakeFiles/Progress/count.txt
 *.includecache
-cmake-build-debug/cn
+*.cmake-build-debug/cn
 cmake-build-debug/CMakeFiles/cn.dir/C.includecache
 .idea/workspace.xml
 *.xml
