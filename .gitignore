@@ -68,3 +68,5 @@ cmake-build-debug/CMakeFiles/cn.dir/C.includecache
 *.xml
 *.includecache
 cmake-build-debug/cn
+*.xml
+cmake-build-debug/cn
