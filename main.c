@@ -11,10 +11,7 @@
 // Please change order, names arguments to fit your solution.
 
 
-<<<<<<< HEAD
-int main()
-{
-=======
+
 int main(){
     int N = 100; //Size of array's
     int abc = 1;
@@ -24,17 +21,9 @@ int main(){
 
     memset(x, 0, N * sizeof(int)); //Set the values in array x to zero
     memset(y, 0, N * sizeof(int)); //Set the values in array y to zero
->>>>>>> parent of f50f0da... gitignore .idea files
+
     QRS_params qsr_params;                   // Instance of the made available through: #include "qsr.h"
     openfile("ECG.txt");                     // Pointer to a file object;
-
-    int N = 100; //Size of array's
-
-    int  *x = (int * ) malloc(N * sizeof(int)); //Allocate size of array x
-    int  *y = (int * ) malloc(N * sizeof(int)); //Allocate size of array x
-
-    memset(x, 0, N * sizeof (int)); //Set the values in array x to zero
-    memset(y, 0, N * sizeof (int)); //Set the values in array y to zero
 
     int x_low[N];
  //Run lowPassFilter function 33 times
@@ -61,7 +50,7 @@ int main(){
 
     //run highPassFilter i times
     for(int i = 0; i < 30; i++){
-        x_der[i] = Derivative(x_high[i], x);
+        x_der[i] = derivative(x_high[i], x);
     }
 
     memset(x, 0, N * sizeof (int)); //Set the values in array x to zero
@@ -71,7 +60,7 @@ int main(){
 
     //run Square i times
     for(int i = 0; i < 30; i++){
-        x_sqr[i] = Square(x_der[i], x);
+        x_sqr[i] = square(x_der[i], x);
     }
 
     memset(x, 0, N * sizeof (int)); //Set the values in array x to zero

@@ -14,6 +14,7 @@
     <list default="true" id="3db245c5-0975-4b05-83aa-3bf43b656a98" name="Default" comment="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
@@ -49,6 +50,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cn.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/cn.cbp" />
 >>>>>>> parent of c475621... moving window visual
 =======
+=======
+>>>>>>> parent of f50f0da... gitignore .idea files
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
 >>>>>>> parent of f50f0da... gitignore .idea files
     </list>
@@ -76,6 +79,9 @@
 =======
             <state relative-caret-position="255">
               <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+<<<<<<< HEAD
+>>>>>>> parent of f50f0da... gitignore .idea files
+=======
 >>>>>>> parent of f50f0da... gitignore .idea files
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -158,9 +164,13 @@
         <option value="$PROJECT_DIR$/filters.c" />
         <option value="$PROJECT_DIR$/.gitignore" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <option value="$PROJECT_DIR$/main.c" />
 >>>>>>> parent of c475621... moving window visual
+=======
+        <option value="$PROJECT_DIR$/main.c" />
+>>>>>>> parent of f50f0da... gitignore .idea files
 =======
         <option value="$PROJECT_DIR$/main.c" />
 >>>>>>> parent of f50f0da... gitignore .idea files
@@ -247,10 +257,14 @@
       <updated>1506498247109</updated>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1506498248422" duration="4463000" />
 =======
       <workItem from="1506498248422" duration="184000" />
 >>>>>>> parent of c475621... moving window visual
+=======
+      <workItem from="1506498248422" duration="4189000" />
+>>>>>>> parent of f50f0da... gitignore .idea files
 =======
       <workItem from="1506498248422" duration="4189000" />
 >>>>>>> parent of f50f0da... gitignore .idea files
@@ -260,10 +274,14 @@
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="4550000" />
 =======
     <option name="totallyTimeSpent" value="184000" />
 >>>>>>> parent of c475621... moving window visual
+=======
+    <option name="totallyTimeSpent" value="4189000" />
+>>>>>>> parent of f50f0da... gitignore .idea files
 =======
     <option name="totallyTimeSpent" value="4189000" />
 >>>>>>> parent of f50f0da... gitignore .idea files
@@ -377,8 +395,13 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="425">
           <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+=======
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+>>>>>>> parent of f50f0da... gitignore .idea files
 =======
         <state relative-caret-position="289">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -391,6 +414,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+<<<<<<< HEAD
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -467,6 +491,8 @@
         <state relative-caret-position="408">
           <caret line="24" column="71" lean-forward="true" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
 >>>>>>> parent of c475621... moving window visual
+=======
+>>>>>>> parent of f50f0da... gitignore .idea files
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

@@ -63,7 +63,7 @@ int highPassFilter(int x_low, int *x, int *y){
     return x_high;
 }
 
-int Derivative(int x_high, int *x){
+int derivative(int x_high, int *x){
     const int N_x = 5; //Length of x array
 
     int kx = d % 5; //Loop index number in array x
@@ -84,7 +84,7 @@ int Derivative(int x_high, int *x){
     return x_der;
 }
 
-int Square(int x_der, int *x){
+int square(int x_der, int *x){
 
     const int N_x = 10; //Length of x array
 
