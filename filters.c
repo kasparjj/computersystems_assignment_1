@@ -103,7 +103,7 @@ int square(int x_der, int *x){
     return x_sqr;
 }
 
-int moveWin(int input_data, int *x_sqr, int *x){
+int moveWin( int *x_sqr, int *x){
     int sum = 0;
     int N_x = 30; //Length of x array
 
