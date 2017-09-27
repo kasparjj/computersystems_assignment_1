@@ -53,3 +53,4 @@ dkms.conf
 *.cmake
 *.xml
 cmake-build-debug/cn
+.idea/workspace.xml
