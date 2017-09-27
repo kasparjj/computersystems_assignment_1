@@ -1,4 +1,4 @@
-C:\Users\Jacob\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\172.3968.17\bin\cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\Jacob\Google Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1"
+"D:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1"
 -- The C compiler identification is GNU 6.3.0
 -- The CXX compiler identification is GNU 6.3.0
 -- Check for working C compiler: C:/MinGW/bin/gcc.exe
@@ -15,4 +15,4 @@ C:\Users\Jacob\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\172.3968.17\bin\c
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Jacob/Google Drive/Dokumenter/Studie/3 semester/02132 Computer systems E17/Assignment 1/CLion/computersystems_assignment_1/cmake-build-debug
+-- Build files have been written to: D:/Drive/Dokumenter/Studie/3 semester/02132 Computer systems E17/Assignment 1/CLion/computersystems_assignment_1/cmake-build-debug

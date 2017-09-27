@@ -58,3 +58,15 @@ dkms.conf
 .idea/workspace.xml
 cmake-build-debug/CMakeFiles/Progress/2
 cmake-build-debug/CMakeFiles/Progress/1
+*.cmake
+*.cmake
+*.log
+*.make
+*.includecache
+*.internal
+*.rsp
+cmake-build-debug/CMakeFiles/Makefile2 (1)
+*.cbp
+cmake-build-debug/Makefile (1)
+*.ini
+*.txt

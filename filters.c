@@ -49,24 +49,10 @@ int square(int *x_der, int position){
     return pow(x_der[position],2);
 }
 
-int moveWin(int *x_sqr, int *x){
+int moveWin(int *x_sqr, int position){
     int sum = 0;
-    int N_x = 30; //Length of x array
-
-    int kx = 0; //Loop index number in array x
-
-    for(int i = 1; i <= N_x; i++){
-        sum += x_sqr[((N_x+(0-kx))%N_x)]; //append sqr_x value to x[4]
-        kx++;
+    for (int i = 0; i < 30; ++i) {
+        sum += x_sqr[((position-i)+30)%30];
     }
-
-    int mwi = sum/N_x;
-
-
-    //Derivative equation
-    //int x_mwi = (x[(N_x+(0-kx))%N_x])/N_x;
-    //printf("x_mwi: %4i \t\t\t\t\t x[%i]: %4i\n", x_mwi, (N_x+(0-kx))%N_x, x[(N_x+(0-kx))%N_x]);
-
-
-    return mwi;
+    return sum/30;
 }
