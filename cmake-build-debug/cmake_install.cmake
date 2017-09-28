@@ -1,4 +1,4 @@
-# Install script for directory: D:/Drive/Dokumenter/Studie/3 semester/02132 Computer systems E17/Assignment 1/CLion/computersystems_assignment_1
+# Install script for directory: C:/Users/Jacob/Google Drive/Dokumenter/Studie/3 semester/02132 Computer systems E17/Assignment 1/CLion/computersystems_assignment_1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Drive/Dokumenter/Studie/3 semester/02132 Computer systems E17/Assignment 1/CLion/computersystems_assignment_1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Jacob/Google Drive/Dokumenter/Studie/3 semester/02132 Computer systems E17/Assignment 1/CLion/computersystems_assignment_1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

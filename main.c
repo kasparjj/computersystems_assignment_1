@@ -40,26 +40,17 @@ int main(){
     openfile("ECG.txt");   // Pointer to a file object;
     FILE *writeLowPass = fopen("lowPassFilter.txt","w");
     FILE *writeHighPass = fopen("highPassFilter.txt","w");
-<<<<<<< HEAD
-
-=======
     FILE *writeDer = fopen("derivativeFilter.txt","w");
     FILE *writeSqr = fopen("squareFilter.txt","w");
     FILE *writeMoveWin = fopen("movingWindow.txt","w");
->>>>>>> b8968e71a93b8c614d4afbbaf644d70eca4ab46f
+
     for (int position = 0 ; position < 10000 ; position++) {
         x[position%arraySize] = getNextData();
         x_low[position%arraySize] = lowPassFilter(x, yl, position%arraySize);
         x_high[position%arraySize] = highPassFilter(x_low, yh, position%arraySize);
         x_der[position%arraySize] = derivative(x_high, position%arraySize);
-<<<<<<< HEAD
-        
-
-
-=======
         x_sqr[position%arraySize] = square(x_der,position%arraySize);
         movingWindow[position%arraySize] = moveWin(x_sqr,position%arraySize);
->>>>>>> b8968e71a93b8c614d4afbbaf644d70eca4ab46f
 
 /*        printf("%d",movingWindow[position%arraySize]);
         for (int i = 0; i < (movingWindow[position % arraySize])/50; ++i) {
@@ -69,14 +60,6 @@ int main(){
 
         fprintf(writeLowPass,"%d \n", x_low[position%arraySize]);
         fprintf(writeHighPass,"%d \n", x_high[position%arraySize]);
-<<<<<<< HEAD
-        peakDetection(&qsr_params); // Perform Peak Detection
-    }
-
-    for (int i = 0; i < arraySize; ++i) {
-        printf("%d,",x_high[i]);
-    }
-=======
         fprintf(writeDer,"%d \n", x_der[position%arraySize]);
         fprintf(writeSqr,"%d \n",x_sqr[position%arraySize]);
         fprintf(writeMoveWin,"%d \n", movingWindow[position%arraySize]);
@@ -84,7 +67,10 @@ int main(){
         peakDetection(&qsr_params); // Perform Peak Detection
     }
 
->>>>>>> b8968e71a93b8c614d4afbbaf644d70eca4ab46f
     fclose(writeHighPass);
+    fclose(writeLowPass);
+    fclose(writeDer);
+    fclose(writeMoveWin);
+    fclose(writeSqr);
     return 0;
 }
