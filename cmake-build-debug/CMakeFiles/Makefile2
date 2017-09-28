@@ -44,54 +44,54 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Jacob\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\172.3968.17\bin\cmake\bin\cmake.exe
+CMAKE_COMMAND = "D:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Users\Jacob\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\172.3968.17\bin\cmake\bin\cmake.exe -E remove -f
+RM = "D:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Jacob\Google Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1"
+CMAKE_SOURCE_DIR = "D:\Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Jacob\Google Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1\cmake-build-debug"
+CMAKE_BINARY_DIR = "D:\Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1\cmake-build-debug"
 
 #=============================================================================
-# Target rules for target CMakeFiles/cn.dir
+# Target rules for target CMakeFiles/computersystems_assignment_1.dir
 
 # All Build rule for target.
-CMakeFiles/cn.dir/all:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/depend
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Jacob\Google Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5 "Built target cn"
-.PHONY : CMakeFiles/cn.dir/all
+CMakeFiles/computersystems_assignment_1.dir/all:
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/depend
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5 "Built target computersystems_assignment_1"
+.PHONY : CMakeFiles/computersystems_assignment_1.dir/all
 
 # Include target in all.
-all: CMakeFiles/cn.dir/all
+all: CMakeFiles/computersystems_assignment_1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jacob\Google Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1\cmake-build-debug\CMakeFiles" 5
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/cn.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jacob\Google Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1\cmake-build-debug\CMakeFiles" 0
-.PHONY : CMakeFiles/cn.dir/rule
+CMakeFiles/computersystems_assignment_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1\cmake-build-debug\CMakeFiles" 5
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/computersystems_assignment_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles/computersystems_assignment_1.dir/rule
 
 # Convenience name for target.
-cn: CMakeFiles/cn.dir/rule
+computersystems_assignment_1: CMakeFiles/computersystems_assignment_1.dir/rule
 
-.PHONY : cn
-
-# clean rule for target.
-CMakeFiles/cn.dir/clean:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/clean
-.PHONY : CMakeFiles/cn.dir/clean
+.PHONY : computersystems_assignment_1
 
 # clean rule for target.
-clean: CMakeFiles/cn.dir/clean
+CMakeFiles/computersystems_assignment_1.dir/clean:
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/clean
+.PHONY : CMakeFiles/computersystems_assignment_1.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/computersystems_assignment_1.dir/clean
 
 .PHONY : clean
 
