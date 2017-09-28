@@ -10,8 +10,6 @@
 // The functions and object predefined are just for inspiration.
 // Please change order, names arguments to fit your solution.
 
-
-
 int main(){
     int arraySize = 80; //Size of array x
     int *x = (int *) malloc(arraySize * sizeof(int)); //Allocate size of array x
