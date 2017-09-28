@@ -37,8 +37,6 @@ int derivative(int *x_high, int position){
 
     //Derivative equation
     return (2*x_high[position]+x_high[((position-1)+arraySize)%arraySize]-x_high[((position-3)+arraySize)%arraySize]-2*x_high[((position-4)+arraySize)%arraySize])/8;
-
-
 }
 
 int square(int *x_der, int position){
