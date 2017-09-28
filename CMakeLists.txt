@@ -11,6 +11,7 @@ set(SOURCE_FILES
         main.c
         qsr.c
         qsr.h
+        rscript_illustrations.R
         sensor.c
         sensor.h)
 

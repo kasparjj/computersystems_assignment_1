@@ -71,3 +71,12 @@ cmake-build-debug/Makefile (1)
 *.ini
 *.txt
 *.xml
+.idea/misc.xml
+*.txt
+cmake-build-debug/Makefile
+*.txt
+cmake-build-debug/CMakeFiles/Makefile2
+*.cmake
+*.bin
+*.log
+cmake-build-debug/cmake_install.cmake
