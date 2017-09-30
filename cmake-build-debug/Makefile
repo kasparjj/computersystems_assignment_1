@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "D:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "D:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Naki\Desktop\projects\computersystems A1\computersystems_assignment_1"
+CMAKE_SOURCE_DIR = "D:\Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Naki\Desktop\projects\computersystems A1\computersystems_assignment_1\cmake-build-debug"
+CMAKE_BINARY_DIR = "D:\Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = "C:\Users\Naki\Desktop\projects\computersystems A1\computersy
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Naki\Desktop\projects\computersystems A1\computersystems_assignment_1\cmake-build-debug\CMakeFiles" "C:\Users\Naki\Desktop\projects\computersystems A1\computersystems_assignment_1\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1\cmake-build-debug\CMakeFiles" "D:\Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Naki\Desktop\projects\computersystems A1\computersystems_assignment_1\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Drive\Dokumenter\Studie\3 semester\02132 Computer systems E17\Assignment 1\CLion\computersystems_assignment_1\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cn
+# Target rules for targets named computersystems_assignment_1
 
 # Build rule for target.
-cn: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 cn
-.PHONY : cn
+computersystems_assignment_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 computersystems_assignment_1
+.PHONY : computersystems_assignment_1
 
 # fast build rule for target.
-cn/fast:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/build
-.PHONY : cn/fast
+computersystems_assignment_1/fast:
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/build
+.PHONY : computersystems_assignment_1/fast
 
 filters.obj: filters.c.obj
 
@@ -128,7 +128,7 @@ filters.obj: filters.c.obj
 
 # target to build an object file
 filters.c.obj:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/filters.c.obj
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/filters.c.obj
 .PHONY : filters.c.obj
 
 filters.i: filters.c.i
@@ -137,7 +137,7 @@ filters.i: filters.c.i
 
 # target to preprocess a source file
 filters.c.i:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/filters.c.i
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/filters.c.i
 .PHONY : filters.c.i
 
 filters.s: filters.c.s
@@ -146,7 +146,7 @@ filters.s: filters.c.s
 
 # target to generate assembly for a file
 filters.c.s:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/filters.c.s
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/filters.c.s
 .PHONY : filters.c.s
 
 main.obj: main.c.obj
@@ -155,7 +155,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/main.c.obj
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -164,7 +164,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/main.c.i
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -173,7 +173,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/main.c.s
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/main.c.s
 .PHONY : main.c.s
 
 qsr.obj: qsr.c.obj
@@ -182,7 +182,7 @@ qsr.obj: qsr.c.obj
 
 # target to build an object file
 qsr.c.obj:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/qsr.c.obj
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/qsr.c.obj
 .PHONY : qsr.c.obj
 
 qsr.i: qsr.c.i
@@ -191,7 +191,7 @@ qsr.i: qsr.c.i
 
 # target to preprocess a source file
 qsr.c.i:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/qsr.c.i
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/qsr.c.i
 .PHONY : qsr.c.i
 
 qsr.s: qsr.c.s
@@ -200,7 +200,7 @@ qsr.s: qsr.c.s
 
 # target to generate assembly for a file
 qsr.c.s:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/qsr.c.s
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/qsr.c.s
 .PHONY : qsr.c.s
 
 sensor.obj: sensor.c.obj
@@ -209,7 +209,7 @@ sensor.obj: sensor.c.obj
 
 # target to build an object file
 sensor.c.obj:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/sensor.c.obj
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/sensor.c.obj
 .PHONY : sensor.c.obj
 
 sensor.i: sensor.c.i
@@ -218,7 +218,7 @@ sensor.i: sensor.c.i
 
 # target to preprocess a source file
 sensor.c.i:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/sensor.c.i
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/sensor.c.i
 .PHONY : sensor.c.i
 
 sensor.s: sensor.c.s
@@ -227,7 +227,7 @@ sensor.s: sensor.c.s
 
 # target to generate assembly for a file
 sensor.c.s:
-	$(MAKE) -f CMakeFiles\cn.dir\build.make CMakeFiles/cn.dir/sensor.c.s
+	$(MAKE) -f CMakeFiles\computersystems_assignment_1.dir\build.make CMakeFiles/computersystems_assignment_1.dir/sensor.c.s
 .PHONY : sensor.c.s
 
 # Help Target
@@ -236,7 +236,7 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... cn
+	@echo ... computersystems_assignment_1
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... filters.obj

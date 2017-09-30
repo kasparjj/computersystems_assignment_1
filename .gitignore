@@ -1,6 +1,10 @@
 # Prerequisites
 *.d
 
+# Self
+*.txt
+*.xml
+
 # Object files
 *.o
 *.ko
@@ -50,3 +54,29 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+*.xml
+.idea/workspace.xml
+cmake-build-debug/CMakeFiles/Progress/2
+cmake-build-debug/CMakeFiles/Progress/1
+*.cmake
+*.cmake
+*.log
+*.make
+*.includecache
+*.internal
+*.rsp
+cmake-build-debug/CMakeFiles/Makefile2 (1)
+*.cbp
+cmake-build-debug/Makefile (1)
+*.ini
+*.txt
+*.xml
+.idea/misc.xml
+*.txt
+cmake-build-debug/Makefile
+*.txt
+cmake-build-debug/CMakeFiles/Makefile2
+*.cmake
+*.bin
+*.log
+cmake-build-debug/cmake_install.cmake

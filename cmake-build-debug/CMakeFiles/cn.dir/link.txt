@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\cn.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\cn.dir/objects.a @CMakeFiles\cn.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\cn.dir/objects.a -Wl,--no-whole-archive  -o cn.exe -Wl,--out-implib,libcn.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cn.dir\linklibs.rsp

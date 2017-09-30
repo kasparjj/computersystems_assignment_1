@@ -1,3 +1,3 @@
-C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/CMakeFiles/cn.dir
-C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Drive/Dokumenter/Studie/3 semester/02132 Computer systems E17/Assignment 1/CLion/computersystems_assignment_1/cmake-build-debug/CMakeFiles/computersystems_assignment_1.dir
+D:/Drive/Dokumenter/Studie/3 semester/02132 Computer systems E17/Assignment 1/CLion/computersystems_assignment_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Drive/Dokumenter/Studie/3 semester/02132 Computer systems E17/Assignment 1/CLion/computersystems_assignment_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
