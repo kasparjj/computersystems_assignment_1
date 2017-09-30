@@ -8,100 +8,102 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/Kaspar/CLionProjects/cn/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/Kaspar/CLionProjects/cn/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/Kaspar/CLionProjects/cn/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cn">
-				<Option output="/Users/Kaspar/CLionProjects/cn/cmake-build-debug/cn" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/Kaspar/CLionProjects/cn/cmake-build-debug"/>
+				<Option output="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/cn.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 cn"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 cn"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cn/fast">
-				<Option output="/Users/Kaspar/CLionProjects/cn/cmake-build-debug/cn" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/Kaspar/CLionProjects/cn/cmake-build-debug"/>
+				<Option output="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/cn.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 cn/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/Kaspar/CLionProjects/cn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 cn/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/Kaspar/CLionProjects/cn/filters.c">
+		<Unit filename="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/filters.c">
 			<Option target="cn"/>
 		</Unit>
-		<Unit filename="/Users/Kaspar/CLionProjects/cn/filters.h">
+		<Unit filename="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/filters.h">
 			<Option target="cn"/>
 		</Unit>
-		<Unit filename="/Users/Kaspar/CLionProjects/cn/main.c">
+		<Unit filename="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/main.c">
 			<Option target="cn"/>
 		</Unit>
-		<Unit filename="/Users/Kaspar/CLionProjects/cn/qsr.c">
+		<Unit filename="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/qsr.c">
 			<Option target="cn"/>
 		</Unit>
-		<Unit filename="/Users/Kaspar/CLionProjects/cn/qsr.h">
+		<Unit filename="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/qsr.h">
 			<Option target="cn"/>
 		</Unit>
-		<Unit filename="/Users/Kaspar/CLionProjects/cn/sensor.c">
+		<Unit filename="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/sensor.c">
 			<Option target="cn"/>
 		</Unit>
-		<Unit filename="/Users/Kaspar/CLionProjects/cn/sensor.h">
+		<Unit filename="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/sensor.h">
 			<Option target="cn"/>
 		</Unit>
-		<Unit filename="/Users/Kaspar/CLionProjects/cn/CMakeLists.txt">
+		<Unit filename="C:/Users/Naki/Desktop/projects/computersystems A1/computersystems_assignment_1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

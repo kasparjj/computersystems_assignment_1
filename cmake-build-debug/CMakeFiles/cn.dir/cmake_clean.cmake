@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cn.dir/filters.c.o"
-  "CMakeFiles/cn.dir/main.c.o"
-  "CMakeFiles/cn.dir/qsr.c.o"
-  "CMakeFiles/cn.dir/sensor.c.o"
+  "CMakeFiles/cn.dir/filters.c.obj"
+  "CMakeFiles/cn.dir/main.c.obj"
+  "CMakeFiles/cn.dir/qsr.c.obj"
+  "CMakeFiles/cn.dir/sensor.c.obj"
   "cn.pdb"
-  "cn"
+  "cn.exe"
+  "cn.exe.manifest"
+  "libcn.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
